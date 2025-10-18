@@ -1,5 +1,5 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-    let simbolos = [ '🐕', '🦍', '🐓', '🦎', '🐄', '🦅', '🐖', '🦭', '🦘', '🐂', '🐈', '🐫', '🦛', '🦥'];
+    let simbolos = [ '🐕', '🦍', '🐓', '🦎', '🐄', '🦅', '🐖', '🦭', '🦘', '🐂', '🐈', '🐫', '🦛', '🦥', '🐏', '🦒'];
     //let simbolos = [ '🇧🇷', '🇺🇸', '🇦🇷', '🇲🇽', '🇿🇦', '🇯🇵' ];
     let cartas = simbolos.concat(simbolos);
 
