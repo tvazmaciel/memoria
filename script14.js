@@ -27,7 +27,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
             }
             if ( abertos.length < 2 ) {
                 ndiv.innerHTML = cartas[i];
-            } else {
+                abertos.push(i);
+            }
+            if ( abertos.length == 2 ) {
                 if ( ndivs[abertos[0]].innerHTML == ndivs[abertos[1]].innerHTML ) {
                     ndivs[abertos[0]].style.borderColor = 'green';
                     ndivs[abertos[1]].style.borderColor = 'green';
