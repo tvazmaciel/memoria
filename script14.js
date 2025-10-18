@@ -15,7 +15,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
         ndiv.style.border = '4px dashed black';
         ndiv.style.margin = '10px';
         ndiv.addEventListener( 'click', function () {
-            ndiv.innerHTML = cartas[i];            
             let ndivs = document.querySelectorAll( 'div' );
             let abertos = [];
             for ( let j = 0 ; j < cartas.length ; j++ ) {
@@ -26,7 +25,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
                     abertos.push(j);
                 }
             }
-            if ( abertos.length == 2 ) {
+            if ( abertos.length < 2 ) {
+                ndiv.innerHTML = cartas[i];
+            } else {
                 if ( ndivs[abertos[0]].innerHTML == ndivs[abertos[1]].innerHTML ) {
                     ndivs[abertos[0]].style.borderColor = 'green';
                     ndivs[abertos[1]].style.borderColor = 'green';
