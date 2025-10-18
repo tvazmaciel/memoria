@@ -1,5 +1,6 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-    let simbolos = [ '🐕', '🦍', '🐓', '🦎', '🐄', '🦅', '🐖', '🦭', '🦘', '🐂', '🐈', '🐫', '🦛', '🦥', '🐏', '🦒'];
+    let simbolos = [ '🐕', '🦍', '🐓', '🦕', '🐄', '🦅', '🐖', '🦭', '🦘', '🐂', '🐫', '🦛', '🦥', '🐏', '🦒'];
+    simbolos.push( '<img src="taylor.png" height="220" />' );
     //let simbolos = [ '🇧🇷', '🇺🇸', '🇦🇷', '🇲🇽', '🇿🇦', '🇯🇵' ];
     let cartas = simbolos.concat(simbolos);
 
@@ -14,6 +15,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
         ndiv.style.fontSize = '1000%';
         ndiv.style.border = '4px dashed black';
         ndiv.style.margin = '10px';
+        ndiv.style.width = '205px';
+        ndiv.style.height = '225px';
         ndiv.addEventListener( 'click', function () {
             let ndivs = document.querySelectorAll( 'div' );
             let abertos = [];
