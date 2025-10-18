@@ -1,10 +1,10 @@
 document.addEventListener( 'DOMContentLoaded', function() {
     let simbolos = [ '🐕', '🦍', '🐓', '🦕', '🐄', '🦅', '🐖', '🦭', '🦘', '🐂', '🐫', '🦛', '🦥', '🐏', '🦒'];
-    simbolos.push( '<img src="taylor.png" height="220" />' );
+    simbolos.push( '<img src="taylor.png" style="font-size: 1.1em; height: 1em; vertical-align: -0.2em; margin: auto 0.15em;" />' );
     //let simbolos = [ '🇧🇷', '🇺🇸', '🇦🇷', '🇲🇽', '🇿🇦', '🇯🇵' ];
     let cartas = simbolos.concat(simbolos);
 
-    cartas.sort( function() { return Math.random() - 0.5; } );
+    //cartas.sort( function() { return Math.random() - 0.5; } );
 
     let body = document.querySelector('body');
     for ( let i = 0 ; i < cartas.length ; i++ ) {
@@ -15,8 +15,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
         ndiv.style.fontSize = '1000%';
         ndiv.style.border = '4px dashed black';
         ndiv.style.margin = '10px';
-        ndiv.style.width = '205px';
-        ndiv.style.height = '225px';
         ndiv.addEventListener( 'click', function () {
             let ndivs = document.querySelectorAll( 'div' );
             let abertos = [];
