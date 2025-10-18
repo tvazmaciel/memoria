@@ -4,7 +4,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     //let simbolos = [ '🇧🇷', '🇺🇸', '🇦🇷', '🇲🇽', '🇿🇦', '🇯🇵' ];
     let cartas = simbolos.concat(simbolos);
 
-    //cartas.sort( function() { return Math.random() - 0.5; } );
+    cartas.sort( function() { return Math.random() - 0.5; } );
 
     let body = document.querySelector('body');
     for ( let i = 0 ; i < cartas.length ; i++ ) {
